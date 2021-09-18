@@ -18,15 +18,24 @@ const h1 = document.getElementById("title");
 //   }
 // }
 
+// function handleTitleClick() {
+//   const currentColor = h1.style.color;
+//   let newColor;
+//   if (currentColor === "blue") {
+//     newColor = "tomato";
+//   } else {
+//     newColor = "blue";
+//   }
+//   h1.style.color = newColor;
+// }
 function handleTitleClick() {
-  const currentColor = h1.style.color;
-  let newColor;
-  if (currentColor === "blue") {
-    newColor = "tomato";
+  const clickedClass = "clicked";
+  const defaultClass = "";
+  if (h1.className === clickedClass) {
+    h1.className = defaultClass;
   } else {
-    newColor = "blue";
+    h1.className = clickedClass;
   }
-  h1.style.color = newColor;
 }
 
 // function handleMouseEnter() {
