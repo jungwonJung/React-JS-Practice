@@ -28,14 +28,19 @@ const h1 = document.getElementById("title");
 //   }
 //   h1.style.color = newColor;
 // }
+
+// function handleTitleClick() {
+//   const clickedClass = "clicked";
+//   const defaultClass = "";
+//   if (h1.classList.contains(clickedClass)) {
+//     h1.classList.remove(clickedClass);
+//   } else {
+//     h1.className.add(clickedClass);
+//   }
+// }
+
 function handleTitleClick() {
-  const clickedClass = "clicked";
-  const defaultClass = "";
-  if (h1.className === clickedClass) {
-    h1.className = defaultClass;
-  } else {
-    h1.className = clickedClass;
-  }
+  h1.classList.toggle("clicked");
 }
 
 // function handleMouseEnter() {
