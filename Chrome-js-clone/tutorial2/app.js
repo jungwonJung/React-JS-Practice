@@ -1,6 +1,7 @@
 const loginInput = document.querySelector("#login-form input");
 // const loginButton = document.querySelector("#login-form button");
 const loginForm = document.querySelector("#login-form");
+const link = document.querySelector("a");
 
 function hadleLoginSubmit(e) {
   e.preventDefault();
@@ -13,6 +14,12 @@ function hadleLoginSubmit(e) {
   console.log(loginInput.value);
 }
 
+function handleLinkClick(e) {
+  e.preventDefault();
+  console.dir(e);
+}
+
 // loginButton.addEventListener("click", hadleBtnClick);
 
 loginForm.addEventListener("submit", hadleLoginSubmit);
+link.addEventListener("click", handleLinkClick);
